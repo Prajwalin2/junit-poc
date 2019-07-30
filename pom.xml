@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.github.aha.poc.junit</groupId>
+	<artifactId>junit-poc</artifactId>
+	<version>1.0</version>
+	<packaging>pom</packaging>
+
+	<description>Demo project with examples of JUnit usage (including JUnit5 and Spring)</description>
+
+	<properties>
+		<!-- basic properties -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<modules>
+		<module>parent</module>
+		<module>junit4</module>
+		<module>junit5</module>
+		<module>spring-ju4</module>
+		<module>spring-ju5</module>
+		<module>spring-boot</module> <!-- it's not a regular module since it inherits from Spring (and not form JU parent) -->
+		<module>cucumber</module>
+	</modules>
+	
+	<build>
+		<plugins>
+			<plugin>
+			    <groupId>external.atlassian.jgitflow</groupId>
+			    <artifactId>jgitflow-maven-plugin</artifactId>
+			    <version>1.0-m5.1</version>
+			    <configuration>
+					<!-- Prevents deployments since there's not maven repo -->
+					<noDeploy>true</noDeploy>
+			    </configuration>
+			</plugin>				
+		</plugins>
+	</build>
+
+</project>
