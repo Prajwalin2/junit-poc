@@ -30,7 +30,7 @@
 		<powermock.version>2.0.0-beta.5</powermock.version>
 		<!-- specific logging properties -->
         <slf4j.version>1.7.25</slf4j.version>
-        <logback.version>1.2.3</logback.version>
+        <logback.version>1.2.13</logback.version>
         <!-- specific Spring properties -->
         <spring.version>5.0.7.RELEASE</spring.version>
 	</properties>
